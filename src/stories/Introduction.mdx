@@ -1,0 +1,93 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Introduction" />
+
+# UI Components
+
+Библиотека компонентов пользовательского интерфейса, разработанная с использованием React и Tailwind CSS.
+
+## Компоненты
+
+### Button
+Универсальный компонент кнопки с поддержкой:
+- Различных вариантов стилей (CTA, Primary, Secondary, Ghost, Danger)
+- Иконок (слева или справа)
+- Состояния disabled
+- Возможности использования как ссылки
+
+### IconButton
+Компонент для кнопок-иконок с поддержкой:
+- Различных вариантов стилей (Primary, Secondary, Ghost, Danger)
+- Состояния disabled
+- Всплывающих подсказок (tooltips)
+- Возможности использования как ссылки
+- Анимации
+
+### Input
+Компонент поля ввода с поддержкой:
+- Заголовка (опционально, по умолчанию "Label")
+- Дополнительного текста справа (опционально)
+- Подписи под полем (опционально)
+- Различных типов ввода (text, password, email, number)
+- Состояния disabled
+- Placeholder и значения по умолчанию
+
+## Дизайн-система
+
+Компоненты используют следующие стили:
+
+### Типографика
+
+#### Текстовые стили
+- button-text: Instrument Sans Medium, 13px/16px
+- text-p-small: Instrument Sans Regular, 13px/16px, -1% letter-spacing
+- text-p-small-semibold: Instrument Sans Medium, 13px/16px, -1% letter-spacing
+
+#### Применение
+- Button, IconButton: button-text
+- Input:
+  - Заголовок: text-p-small-semibold
+  - Поле ввода, placeholder: text-p-small
+  - Дополнительный текст, подпись: text-p-small
+
+### Отступы
+#### Внешние отступы
+- Button: px-2 py-2
+- IconButton: p-2
+- Input: px-3 py-2
+
+#### Внутренние отступы
+- Input: 
+  - Между элементами (label, input, caption): 4px (gap-1)
+  - Отступ для дополнительного текста справа: 8px (right-2)
+
+### Скругления
+- Button: 6px (rounded-md)
+- IconButton: 8px (rounded-lg)
+- Input: 8px (rounded-lg)
+
+### Цвета
+
+#### Текст
+- Primary: #0F172A (100%)
+- Secondary: #0F172A (64%)
+- Tertiary: #0F172A (48%)
+- Disabled: #0F172A (32%)
+- Placeholder: #0F172A (48%)
+
+#### Компоненты
+- CTA: #3A1780
+- Primary: #0F172A
+- Secondary: #FFFFFF (с рамкой)
+- Ghost: прозрачный
+- Danger: #EF4444
+- Border: #CBD5E1
+
+#### Применение текстовых цветов
+- Input:
+  - Заголовок: text-primary
+  - Поле ввода: text-primary
+  - Placeholder: text-placeholder
+  - Дополнительный текст: text-tertiary
+  - Подпись: text-tertiary
+  - Отключенное состояние: text-disabled 
