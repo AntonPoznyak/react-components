@@ -8,6 +8,7 @@ export default {
     theme: {
       extend: {
         colors: {
+          'list-item-hover': 'rgba(15,23,42,0.04)',
           text: {
             primary: '#0F172A',
             secondary: '#0F172AA3', // 64%
